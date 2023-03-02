@@ -12,11 +12,13 @@ input.path[cars]
 }
 # vars et helpers
 user_lu := input["user"]
-user_fonction := users[user_lu].title
+user_fonction := data.users[user_lu].title
 
 user_is_manager {
 user_fonction == "manager"
 }
+
 user_is_manager {
 user_fonction == "ceo"
 }
+
